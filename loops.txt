@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+class Student{
+    public:
+    int marks[5];
+
+ void showInput(){
+     cout << "Enter any 5 subjects marks: ";
+     for(int i=1 ; i<=5 ; i++){
+         cin >> marks[i];
+     }
+ }
+ void showOutput(){
+     cout << "Marks are : " ;
+    for(int i=1 ; i<=5 ; i++){
+        cout << marks[i] << " ";
+    }
+  }
+ };
+ 
+ int main(){
+     Student s;
+     s.showInput();
+     s.showOutput();
+ };
